@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-20 07:56:47 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMjA7MDQ6NTc6NTAgw5ZTOzMwMDc="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMjA7MDc6NTY6NDcgw5ZTOzE7MzEyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="String" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <output expression="&quot;bi&#351;ey yaz&#305;n&#305;z ve onun ka&#231; harfi old&#287;unu s&#246;ylesin&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="len(b)"/>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

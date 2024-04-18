@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 06:49:31 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDY6MzM6NTggw5ZTOzMwMTg="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDY6NDk6MzEgw5ZTOzE7MzEyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x, toplam" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;a de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&lt;b">
+                <then>
+                    <for variable="x" start="a" end="b" direction="inc" step="1">
+                        <assign variable="toplam" expression="toplam+x"/>
+                    </for>
+                    <output expression="toplam" newline="True"/>
+                </then>
+                <else>
+                    <for variable="x" start="b" end="a" direction="inc" step="1">
+                        <assign variable="toplam" expression="toplam+x"/>
+                    </for>
+                    <output expression="toplam" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

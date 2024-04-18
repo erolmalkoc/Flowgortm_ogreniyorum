@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 06:18:39 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDU6NTI6MTUgw5ZTOzMwMTE="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDY6MTg6Mzkgw5ZTOzE7MzEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, x1, x2" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="d" expression="b^2-4*a*c"/>
+            <if expression="d&gt;0">
+                <then>
+                    <assign variable="x1" expression="(-b+Sqrt(d))/2*a"/>
+                    <assign variable="x2" expression="(-b-Sqrt(d))/2*a"/>
+                    <output expression="&quot;x1=  &quot;   &amp;x1&amp;    &quot;x2=&quot;&amp;x2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;k&#246;k&#252; yoktor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

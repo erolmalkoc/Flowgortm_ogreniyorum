@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 05:52:08 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDU6NDQ6MTMgw5ZTOzMwMTA="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDk7MDU6NTI6MDggw5ZTOzU7MzEyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ort" type="Integer" array="False" size=""/>
+            <output expression="&quot;vizeyi giriniz&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;finali giriniz&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ort" expression="(vize*40)/100+(final*60)/100"/>
+            <if expression="ort&gt;=50">
+                <then>
+                    <output expression="&quot;ge&#231;ti     &quot;   &amp;   ort" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;kald&#305;    &quot;&amp;ort" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

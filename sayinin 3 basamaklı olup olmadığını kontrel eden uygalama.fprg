@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-17 03:13:22 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTc7MDM6MTA6Mzcgw5ZTOzMwMDY="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTc7MDM6MTM6MjIgw5ZTOzM7MzExMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#252;&#231; basamakl&#305; bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="3=len(tostring(sayi))">
+                <then>
+                    <output expression="&quot;3 basamakl&#305; bir sayi girdiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;3 basamakl&#305; depil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

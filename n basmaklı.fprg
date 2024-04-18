@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-17 10:50:40 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTc7MDg6MTA6MzMgw5ZTOzMwMDc="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTc7MTA6NTA6NDAgw5ZTOzY7MzExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, basamak, toplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="basamak" expression="0"/>
+            <while expression="sayi != 0">
+                <assign variable="basamak" expression="basamak + 1"/>
+                <output expression="sayi%10" newline="True"/>
+                <assign variable="sayi" expression="sayi/10"/>
+                <assign variable="toplam" expression="toplam+basamak"/>
+                <output expression="toplam" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

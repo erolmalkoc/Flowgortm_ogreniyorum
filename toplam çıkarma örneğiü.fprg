@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-08 04:13:10 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDg7MDM6MDY6MTggw5ZTOzMwMTA="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDg7MDQ6MTM6MTAgw5ZTOzY7MzExNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, toplama, &#231;&#305;karma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;sayi2 giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <assign variable="toplam" expression="sayi1+sayi2"/>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

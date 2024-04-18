@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-10 10:17:42 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTA7MDk6NTk6NTUgw5ZTOzMwMTg="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTA7MTA6MTc6NDIgw5ZTOzE7MzEwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, sayi" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;&gt;0">
+                <assign variable="toplam" expression="toplam+sayi"/>
+                <input variable="sayi"/>
+            </while>
+            <output expression="&quot;Toplam:&quot;   &amp;  toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

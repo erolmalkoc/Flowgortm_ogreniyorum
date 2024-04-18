@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-08 07:51:53 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDg7MDU6MTc6Mzcgw5ZTOzMwMTU="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDg7MDc6NTE6NTMgw5ZTOzE7MzEyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, toplam" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="x" start="1" end="100" direction="inc" step="1">
+                <assign variable="toplam" expression="toplam+x"/>
+            </for>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-16 01:04:07 &#214;&#214;"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMjA7MDc6NTc6MDAgw5ZTOzMwMDU="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTEtMTY7MDE6MDQ6MDcgw5bDljsxNDszMjk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, x, hak" type="Integer" array="False" size=""/>
+            <assign variable="hak" expression="4"/>
+            <output expression="&quot;oyunumuza ho&#351; geldiniz 1 ile 20 aras&#305;nda bir say&#305; bulun ve kazan&#305;n &quot;" newline="True"/>
+            <assign variable="x" expression="0"/>
+            <assign variable="x" expression="random(20)+1"/>
+            <input variable="sayi"/>
+            <assign variable="sayi" expression="abs(sayi)"/>
+            <while expression="sayi&gt;21">
+                <output expression="&quot;hatal&#305; girdiniz&quot;" newline="True"/>
+                <output expression="&quot;oyunumuza ho&#351; geldiniz 1 ile 20 aras&#305;nda bir say&#305; bulun ve kazan&#305;n &quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <while expression="sayi!= x &amp;&amp; hak!=0">
+                <if expression="x&gt;sayi">
+                    <then>
+                        <output expression="&quot;biraz yukar&#305; kalan hakk&#305;n&#305;z : &quot;&amp;hak" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;biraz a&#351;a&#287;&#305; kalan hakk&#305;n&#305;z : &quot;&amp;hak" newline="True"/>
+                    </else>
+                </if>
+                <input variable="sayi"/>
+                <while expression="sayi&gt;21">
+                    <output expression="&quot;hatal&#305; girdiniz&quot;" newline="True"/>
+                    <input variable="sayi"/>
+                </while>
+                <assign variable="hak" expression="hak-1"/>
+            </while>
+            <if expression="hak==0">
+                <then>
+                    <output expression="&quot;hakk&#305;n&#305;z bitti  &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;bildiniz cevab : &quot;&amp;x        &amp;&quot;hakk&#305;n&#305;z : &quot;&amp;hak" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-07 07:23:11 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDc7MDQ6MTM6MDAgw5ZTOzI5OTk="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMDc7MDc6MjM6MTAgw5ZTOzE7MzExMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <output expression="&quot;a de&#287;erini giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <for variable="x" start="b" end="a" direction="inc" step="1">
+                        <if expression="x%2=0">
+                            <then/>
+                            <else>
+                                <output expression="x" newline="True"/>
+                            </else>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <for variable="x" start="a" end="b" direction="inc" step="1">
+                        <if expression="x%2=0">
+                            <then/>
+                            <else>
+                                <output expression="x" newline="True"/>
+                            </else>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

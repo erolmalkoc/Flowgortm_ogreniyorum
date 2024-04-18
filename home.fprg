@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 03:44:09 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTEtMDE7MDI6NTU6NDggw5ZTOzMwMTA="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTEtMDE7MDM6NDQ6MDkgw5ZTOzE7MzExNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;a say&#305;s&#305; : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b say&#305;s&#305;:&quot;" newline="True"/>
+            <input variable="b"/>
+        </body>
+    </function>
+    <function name="KareAl" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>

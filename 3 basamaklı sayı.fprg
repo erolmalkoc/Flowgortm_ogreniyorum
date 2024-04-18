@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-15 12:05:54 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTM7MTA6MTg6MjYgw5ZTOzMwMDY="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTU7MTI6MDU6NTQgw5ZTOzE7MzExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birler, onlar, y&#252;zler, sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="birler" expression="sayi%10"/>
+            <assign variable="onlar" expression="(sayi/10)%10"/>
+            <assign variable="y&#252;zler" expression="sayi/100"/>
+            <output expression="&quot;birler&quot;&amp;birler&amp;  &quot;onlar&quot;&amp;onlar &amp; &quot;y&#252;zler&quot;&amp;y&#252;zler" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

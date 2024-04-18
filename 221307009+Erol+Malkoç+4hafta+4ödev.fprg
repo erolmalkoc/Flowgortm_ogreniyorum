@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 02:25:08 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMjc7MDI6MDI6Mzggw5ZTOzMwMDg="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMjc7MDI6MjU6MDggw5ZTOzU7MzEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, i, enb&#252;y&#252;k, enk&#252;c&#252;k, p, &#231;arp&#305;m" type="Integer" array="False" size=""/>
+            <output expression="&quot;say&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="deger" type="Integer" array="True" size="a"/>
+            <for variable="i" start="0" end="a-1" direction="inc" step="1">
+                <assign variable="deger[i]" expression="random(50)"/>
+                <output expression="deger[i]" newline="True"/>
+            </for>
+            <assign variable="enb&#252;y&#252;k" expression="deger[0]"/>
+            <assign variable="enk&#252;c&#252;k" expression="deger[0]"/>
+            <for variable="i" start="0" end="a-1" direction="inc" step="1">
+                <if expression="deger[i]&lt;enk&#252;c&#252;k">
+                    <then>
+                        <assign variable="enk&#252;c&#252;k" expression="deger[i]"/>
+                    </then>
+                    <else>
+                        <if expression="deger[i]&gt;=enb&#252;y&#252;k">
+                            <then>
+                                <assign variable="enb&#252;y&#252;k" expression="deger[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="enb&#252;y&#252;k" newline="True"/>
+            <output expression="enk&#252;c&#252;k" newline="True"/>
+            <assign variable="&#231;arp&#305;m" expression="enb&#252;y&#252;k*enk&#252;c&#252;k"/>
+            <output expression="&quot;&#231;arp&#305;m: &quot;&amp;&#231;arp&#305;m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

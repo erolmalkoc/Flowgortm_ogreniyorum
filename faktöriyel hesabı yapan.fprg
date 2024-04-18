@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="erolm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-15 12:17:15 &#214;S"/>
+        <attribute name="created" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTU7MTI6MDU6NTggw5ZTOzMwMTE="/>
+        <attribute name="edited" value="ZXJvbG07TEFQVE9QLVI0VDBGTjFOOzIwMjItMTAtMTU7MTI6MTc6MTUgw5ZTOzE7MzExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fakt&#246;riyel, x, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;fakt&#246;riyel istedi&#287;iniz de&#287;eri giriniz&quot;" newline="True"/>
+            <input variable="fakt&#246;riyel"/>
+            <assign variable="sonuc" expression="1"/>
+            <for variable="x" start="fakt&#246;riyel" end="1" direction="dec" step="1">
+                <assign variable="sonuc" expression="sonuc*x"/>
+            </for>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
